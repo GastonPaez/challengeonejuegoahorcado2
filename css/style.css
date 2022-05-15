@@ -40,3 +40,44 @@ body{
 .add-word:hover {
     background: #fff
 }
+.container-2 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.atencion {
+    
+}
+
+.botonera-2 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.save-start {
+    width: 250px;
+    height: 50px;
+    
+    border-radius: 24px;
+    background: #0A3871;
+    color: #fff;
+    
+}
+.save-start:hover{
+    background: #072B61;
+}
+
+.cancel {
+    width: 250px;
+    height: 50px;
+    border-radius: 24px;
+    background: #F3F5FC;    
+}
+
+.cancel:hover {
+    background: #fff
+}
