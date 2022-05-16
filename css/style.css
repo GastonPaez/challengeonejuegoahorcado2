@@ -81,3 +81,24 @@ body{
 .cancel:hover {
     background: #fff
 }
+
+.input {
+    
+    outline: none;
+    border: 0;
+    background: #F3F5FC;
+    margin-top: 12%;
+    color: #0A3871;
+    font-weight: 600;
+    font-size: 1.7em;
+    text-align: left;
+    width: 100%;
+    
+}
+
+.container-3 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
