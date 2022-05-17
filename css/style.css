@@ -101,4 +101,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+.input_game, .input_type {
+    justify-content: flex-end;    
+    outline: none;
+    border: 0;
+    background: #9099ba;    
+    color: #0A3871;
+    font-weight: 600;
+    font-size: 6em;    
+    text-align: center;        
+}
+.input_type {
+    margin-top: 12%;
 }
