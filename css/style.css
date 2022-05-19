@@ -1,26 +1,47 @@
 body{
-    background: #F3F5FC;
+    /*background: #F3F5FC;
+    */
+    background-image: url(../img/desk4.jpg);    
+    background-repeat: no-repeat;
+    background-position: right right;
+    background-attachment: fixed;
+    background-size: cover; 
+    min-height: 100%;
+    
 }
+
+/*///////////////////////////////////////////////////
+////////////////////// NAV BAR /////////////////////
+///////////////////////////////////////////////////*/
 
 .navbar {
-    padding: 30px;
-}
-.container-1 {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 30px;   
+    position: absolute;
+    
 }
 
-.botonera {
+/*///////////////////////////////////////////////////
+////////////////// PRIMERO //////////////////////////
+///////////////////////////////////////////////////*/
+.container-1 {
+    
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    display: none;
+}
+
+.botonera-1 {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     
 }
 .play {
     width: 250px;
     height: 75px;
-    margin-bottom: 10px;
+    margin-top: 70%;
     border-radius: 24px;
     background: #0A3871;
     color: #fff;
@@ -40,6 +61,10 @@ body{
 .add-word:hover {
     background: #fff
 }
+
+/*///////////////////////////////////////////////////
+//////////////////// SEGUNDO ////////////////////////
+///////////////////////////////////////////////////*/
 .container-2 {
     height: 100vh;
     display: flex;
@@ -47,10 +72,13 @@ body{
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
+    display: none;
 }
 .atencion {
     
 }
+
+
 
 .botonera-2 {
     display: flex;
@@ -58,7 +86,7 @@ body{
     gap: 2rem;
     
 }
-.save-start {
+.save-start, .new-game {
     width: 250px;
     height: 50px;
     
@@ -67,18 +95,18 @@ body{
     color: #fff;
     
 }
-.save-start:hover{
+.save-start:hover , .new-game:hover{
     background: #072B61;
 }
 
-.cancel {
+.cancel, .dismiss {
     width: 250px;
     height: 50px;
     border-radius: 24px;
     background: #F3F5FC;    
 }
 
-.cancel:hover {
+.cancel:hover, .dismiss:hover {
     background: #fff
 }
 
@@ -96,23 +124,50 @@ body{
     
 }
 
+
+/*///////////////////////////////////////////////////
+//////////////////// TECERO /////////////////////////
+///////////////////////////////////////////////////*/
+
 .container-3 {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
+.page {
+    background: url(/img/blockhorizontal.png);    
+    margin-top: 100px;
+    width: 150%;
+    height: 150%;    
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 50px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;    
+}
+
 .input_game, .input_type {
     justify-content: flex-end;    
     outline: none;
     border: 0;
-    background: #9099ba;    
+    background: #9099ba1c;    
     color: #0A3871;
     font-weight: 600;
     font-size: 6em;    
     text-align: center;        
 }
+
+.botonera-3 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row;
+}
+
 .input_type {
-    margin-top: 12%;
+    
 }
