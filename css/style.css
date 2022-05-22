@@ -161,18 +161,18 @@ body{
     justify-content: flex-end;    
 }
 
-.input_game, .input_type {    
+.input_count, .input_word {    
     
     outline: none;
     border: 0;
-    background: #9099ba1c;    
+    background: #9099ba00;    
     color: #0A3871;
     font-weight: 600;
     font-size: 6em;    
     text-align: center;    
       
 }
-.input_type {
+.input_word {
     margin-bottom: -75px;  
 }
 
@@ -182,4 +182,8 @@ body{
     align-items: center;
     gap: 2rem;
     flex-direction: row;
+}
+
+.detect{
+    display: none;
 }

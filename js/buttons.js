@@ -24,9 +24,10 @@ function cancelar() {
 
 btPlay = document.getElementById('play')
 function play(){
-    container1.classList.remove('container-1')
-    container1.classList.add('remove')
+    container1.classList.remove('container-1');
+    container1.classList.add('remove');
    
-    container3.classList.remove('remove')
-    container3.classList.add('container-3')
+    container3.classList.remove('remove');
+    container3.classList.add('container-3');
+    newGame();
 }
