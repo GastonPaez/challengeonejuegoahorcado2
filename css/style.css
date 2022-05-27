@@ -141,7 +141,7 @@ body{
     flex-direction: column;
 }
 
-.input__text_letter , .input__text_game {
+.input__text_letter , .input__text_game, .input__incorrect {
     display: flex;    
     justify-content: center;
 
@@ -161,7 +161,7 @@ body{
     justify-content: flex-end;    
 }
 
-.input_count, .input_word {    
+.input_count, .input_word, .input_incorrect {    
     
     outline: none;
     border: 0;
@@ -169,13 +169,23 @@ body{
     color: #0A3871;
     font-weight: 600;
     font-size: 6em;    
-    text-align: center;    
+    text-align: center;   
+    letter-spacing: 45px 
       
 }
-.input_word {
-    margin-bottom: -75px;  
+.input_count{
+    
 }
 
+.input_word {
+    margin-bottom: -75px;  
+    
+}
+
+.input_incorrect {
+    font-size: 6em;  
+    color: rgb(222, 5, 5);      
+}
 
 .botonera-3 {
     display: flex;

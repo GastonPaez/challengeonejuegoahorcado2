@@ -1,8 +1,14 @@
 
 let palabras = ['programacion','diseño','javascript','python','hipervinculo','alura','oracle','frontend','backend']
+let acertadas = []
+let incorrectas =[]
 
-
-
+/*
+let editWord = ""
+    for (let i in seleccion){
+        editWord = editWord.concat(seleccion[i] + " ")         
+    }
+*/
 
 function newGame(){
     
@@ -12,19 +18,17 @@ function newGame(){
     
     guiones = document.getElementById('input_count')
     textWord = document.getElementById('input_word')
-    select = "_ ".repeat(seleccion.length)
-    guiones.value = select
-    let editWord = ""
-    for (let i in seleccion){
-        editWord = editWord.concat(seleccion[i] + " ")         
-    }
+    select = "_".repeat(seleccion.length)
+    guiones.value = select    
 
-    textWord.value= editWord
+    textWord.value= seleccion
     let incorrect = ""
     document.addEventListener("keydown", e =>{    
         console.log(e.key)
         // Si la tecla presionada es incorrecta    
-        if (!seleccion.includes(e.key)){
+        if (seleccion.includes(e.key) && !acertadas.includes(e.key)){
+            acertadas.push(e.key)
+
             incorrect = incorrect.concat(e.key)
             console.log(incorrect)
             
