@@ -18,6 +18,7 @@ function newGame(){
     
     guiones = document.getElementById('input_count')
     textWord = document.getElementById('input_word')
+    textWrong = document.getElementById('input_incorrect')
     select = "_".repeat(seleccion.length)
     guiones.value = select    
 
@@ -25,6 +26,10 @@ function newGame(){
     let incorrect = ""
     document.addEventListener("keydown", e =>{    
         console.log(e.key)
+
+        if (!seleccion.includes(e.key)){
+            incorrectas.push(e.key)
+        }
         // Si la tecla presionada es incorrecta    
         if (seleccion.includes(e.key) && !acertadas.includes(e.key)){
             acertadas.push(e.key)
@@ -32,12 +37,10 @@ function newGame(){
             incorrect = incorrect.concat(e.key)
             console.log(incorrect)
             
-        }
+        }        
         
-    });
-    
+    });   
 
-    
+    textWrong.value = incorrectas //lista pero debe tomar una cadena
 }
 
-// Tecla pulsada
