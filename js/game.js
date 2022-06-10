@@ -27,7 +27,7 @@ function newGame(){
     guiones.value = select    
     var palabraCorrecta = seleccion.replace(/./g, " ");
     textWord.value= palabraCorrecta
-    textWord.value = palabraIncorrecta
+    //textWord.value = palabraIncorrecta
     let incorrect = ""
 
     
@@ -68,7 +68,7 @@ function newGame(){
             else {
                 if (!verificarPulsacion(e.key)) return
                 agregarLetraIncorrecta(letra)
-                escribirletraIncorrecta(letra,errores)
+                //escribirletraIncorrecta(letra,errores)
             }  
         }  
     });   

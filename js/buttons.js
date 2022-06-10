@@ -31,3 +31,14 @@ function play(){
     container3.classList.add('container-3');
     newGame();
 }
+
+btReset = document.getElementById('new-game');
+function resetGame(){
+    
+    container1.classList.remove('container-1');
+    container1.classList.add('remove');
+   
+    container3.classList.remove('remove');
+    container3.classList.add('container-3');
+    newGame();
+}
